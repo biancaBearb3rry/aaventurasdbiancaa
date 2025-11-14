@@ -3,22 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Em busca da cidade perdida</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <title>Em busca da cidade esquecida</title>
 </head>
 <body>
     <main>
-        <div class="passo" id="passo-0">
-            <p>Dr. Luca Valerius, em sua casa em Roma, descobre um artefato de bronze misterioso em meio aos pertences de um ancestral. O artefato é uma tabuleta com inscrições em latim arcaico, que fala de uma "Cidade Dourada" (inspirada em El Dorado, mas com um toque romano) escondida nas profundezas da Amazônia, protegida pela "maldição de um deus da guerra". A tabuleta contém um mapa parcial.</p>
-            <button class="btn-proximo" data-proximo="1">Rio de Janeiro</button>
-            <button class="btn-proximo" data-proximo="2">Herculano</button>
+        <div class="passo ativo" id="passo-0">
+            <img src="img/cenario-passo0-roma.png" alt="Mural ou pergaminho antigo com brasão romano.">
+            <p>Em uma escavação perto de Roma, você encontra um pergaminho antigo sobre **Aetérnia**, uma vila romana lendária, dita ser perfeita e eterna, mas oculta da história. O pergaminho contém as primeiras pistas! Onde começar sua busca na Cidade Eterna?</p>
+            <button class="btn-proximo" data-proximo="1">O Coliseu</button>
+            <button class="btn-proximo" data-proximo="2">Ostia Antica</button>
         </div>
+        
         <div class="passo" id="passo-1">
-            <p>Você começa sua jornada no Rio de Janeiro, subindo o Pico da Tijuca ao amanhecer para encontrar a primeira pista.</p>
-            <button class="btn-proximo" data-proximo="3">Procurar a pista no topo do pico</button>
+            <p>Você começa sua jornada no **Coliseu**. A pista diz: "Onde o rugido da glória ecoa, procure a sombra do maior imperador". Você decide procurar na estátua de Constantino ou nas Catacumbas próximas?</p>
+            <button class="btn-proximo" data-proximo="3">Investigar o Arco de Constantino</button>
             <button class="btn-proximo" data-proximo="4">Desistir e voltar para casa</button>
         </div>
+
+        <div class="passo" id="passo-2">
+            <p>Em **Ostia Antica**, o antigo porto de Roma, a pista sugere: "Onde o comércio fluía e as ondas beijavam a terra, procure o piso quebrado no Banhos de Netuno". Por qual local você começa a investigar?</p>
+            <button class="btn-proximo" data-proximo="5">Investigar os Banhos de Netuno</button>
+            <button class="btn-proximo" data-proximo="6">Explorar o Teatro Romano</button>
+        </div>
+
+        <div class="passo" id="passo-3">
+            <p>Perto do Arco de Constantino, uma inscrição quase apagada aponta para a "cidade que morre", a próxima pista está localizada em **Civita di Bagnoregio**, famosa por suas fundações em erosão.</p>
+            <button class="btn-proximo" data-proximo="7">Seguir para Civita di Bagnoregio</button>
+        </div>
+
+        <div class="passo" id="passo-4">
+            <img src="img/cenario-passo4-voltar-casa.png" alt="imagem voltando para casa e desitindo da aventura">
+            <p>Você decide que a lenda é grande demais e volta para casa, mas sempre se pergunta o que teria encontrado na vila esquecida de Aetérnia.</p>
+        </div>
+
+        <div class="passo" id="passo-5">
+            <p>No mosaico quebrado dos Banhos de Netuno, você descobre uma pequena câmara secreta. Dentro, um mapa antigo aponta para a "cidade que morre", **Civita di Bagnoregio**.</p>
+            <button class="btn-proximo" data-proximo="7">Viajar para Civita di Bagnoregio</button>
+        </div>
+
+        <div class="passo" id="passo-6">
+            <p>Explorando o Teatro Romano, você encontra apenas velhas moedas, e o sol está se pondo. Você decide voltar aos Banhos de Netuno antes de escurecer.</p>
+            <button class="btn-proximo" data-proximo="8">Voltar e investigar os Banhos de Netuno</button>
+        </div>
+
+        <div class="passo" id="passo-7">
+            <p>Chegando em Civita di Bagnoregio, você se depara com duas pontes. A pista final diz: "Aetérnia se esconde na sombra do que *cai*".</p>
+            <button class="btn-proximo" data-proximo="9">Pegar a ponte à esquerda (mais desgastada)</button>
+            <button class="btn-proximo" data-proximo="10">Pegar a ponte à direita (mais nova)</button>
+        </div>
+
+        <div class="passo" id="passo-8">
+            <p>De volta aos Banhos de Netuno, você encontra a câmara secreta e o mapa antigo. Agora, a próxima parada é Civita di Bagnoregio, a "cidade que morre"!</p>
+            <button class="btn-proximo" data-proximo="7">Seguir para Civita di Bagnoregio</button>
+        </div>
+
+        <div class="passo" id="passo-9">
+            <p>A ponte mais desgastada leva a uma trilha oculta sob o tufo vulcânico. Lá, você encontra uma entrada para um túnel que desce e revela a deslumbrante vila de Aetérnia!</p>
+            <button class="btn-proximo" data-proximo="11">Entrar na cidade esquecida</button>
+        </div>
+
+        <div class="passo" id="passo-10">
+            <p>A ponte mais nova leva a uma vista panorâmica, mas não há sinais de entradas secretas. Você perde um tempo admirando a paisagem antes de se dar conta do erro.</p>
+            <button class="btn-proximo" data-proximo="12">Retornar e tentar a outra ponte</button>
+        </div>
+
+        <div class="passo" id="passo-11">
+            <img src="img/cenario-passo11-cidade-perdida-roma.png" alt="encontrando uma vila romana antiga, perfeitamente preservada e escondida.">
+            <p>Dentro de Aetérnia, você descobre uma vila romana perfeitamente preservada, cheia de arte e história. Você decide se dedicar a estudar e proteger este tesouro esquecido da Itália.</p>
+        </div>
+
+        <div class="passo" id="passo-12">
+            <p>Retornando e escolhendo a ponte mais desgastada, você encontra a trilha oculta e o túnel que leva à magnífica Aetérnia!</p>
+            <button class="btn-proximo" data-proximo="11">Explorar a cidade esquecida</button>
+        </div>
     </main>
-
-
+    <script src="script.js"></script>
 </body>
 </html>
